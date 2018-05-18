@@ -15,7 +15,7 @@ public interface ExchRateMapper {
 	//TODO groovy/cokoliv misto + 
 	final String insert = "insert into exchRates values (#{shortName}, #{validFrom}, #{name}, #{country}, #{amount},"
 			+ " #{valBuy}, #{valSell}, #{valMid}, #{currBuy}, #{currSell}, #{currMid}, #{move}, #{cnbMid}, #{version}) "
-			+ "ON DUPLICATE KEY UPDATE shortName=#{shortName}, validFrom=#{validFrom}, name#{name}, country=#{country},"
+			+ "ON DUPLICATE KEY UPDATE shortName=#{shortName}, validFrom=#{validFrom}, name=#{name}, country=#{country},"
 			+ "amount=#{amount}, valBuy=#{valBuy}, valSell=#{valSell}, valMid=#{valMid}, currBuy=#{currBuy}, "
 			+ "currSell=#{currSell}, currMid=#{currMid}, move=#{move}, cnbMid=#{cnbMid}, version=#{version}";
 	
