@@ -1,0 +1,4 @@
+localdomain\localhost\rest\App.class
+localdomain\localhost\rest\mapper\ExchRateMapper.class
+localdomain\localhost\rest\controller\ExchRateController.class
+localdomain\localhost\rest\model\ExchRate.class
