@@ -40,6 +40,7 @@ public class ExchRateController {
 				ExchRate[] downloadedRates = mapper.readValue(new URL(url), ExchRate[].class);
 				for (ExchRate rate : downloadedRates)
 					exchRateMapper.save(rate); //muze fungovat jako update diky on dublicate key update
+				session.commit();
 			}
 			return exchRateMapper.findAll();
 		}
